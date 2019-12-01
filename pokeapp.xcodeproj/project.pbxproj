@@ -13,6 +13,8 @@
 		5F31BDBC2390AAAE005503F0 /* pokeappTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F31BDBB2390AAAE005503F0 /* pokeappTests.swift */; };
 		5F31BDC72390AAAE005503F0 /* pokeappUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F31BDC62390AAAE005503F0 /* pokeappUITests.swift */; };
 		5F4AAED223932606005A4973 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5F4AAED123932606005A4973 /* Main.storyboard */; };
+		5F4AAED72393FCA6005A4973 /* Search.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5F4AAED62393FCA6005A4973 /* Search.storyboard */; };
+		5F4AAED92393FCCB005A4973 /* Favorites.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5F4AAED82393FCCB005A4973 /* Favorites.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +47,8 @@
 		5F31BDC62390AAAE005503F0 /* pokeappUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = pokeappUITests.swift; sourceTree = "<group>"; };
 		5F31BDC82390AAAE005503F0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5F4AAED123932606005A4973 /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		5F4AAED62393FCA6005A4973 /* Search.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Search.storyboard; sourceTree = "<group>"; };
+		5F4AAED82393FCCB005A4973 /* Favorites.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Favorites.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,10 +99,9 @@
 		5F31BDA32390AAA9005503F0 /* pokeapp */ = {
 			isa = PBXGroup;
 			children = (
+				5F4AAED52393FC5B005A4973 /* Storyboards */,
 				5F31BDA42390AAA9005503F0 /* AppDelegate.swift */,
-				5F4AAED123932606005A4973 /* Main.storyboard */,
 				5F31BDAA2390AAAD005503F0 /* Assets.xcassets */,
-				5F31BDAF2390AAAD005503F0 /* LaunchScreen.storyboard */,
 				5F31BDB22390AAAD005503F0 /* Info.plist */,
 			);
 			path = pokeapp;
@@ -120,6 +123,17 @@
 				5F31BDC82390AAAE005503F0 /* Info.plist */,
 			);
 			path = pokeappUITests;
+			sourceTree = "<group>";
+		};
+		5F4AAED52393FC5B005A4973 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				5F31BDAF2390AAAD005503F0 /* LaunchScreen.storyboard */,
+				5F4AAED123932606005A4973 /* Main.storyboard */,
+				5F4AAED62393FCA6005A4973 /* Search.storyboard */,
+				5F4AAED82393FCCB005A4973 /* Favorites.storyboard */,
+			);
+			path = Storyboards;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -228,7 +242,9 @@
 			files = (
 				5F31BDB12390AAAD005503F0 /* LaunchScreen.storyboard in Resources */,
 				5F31BDAB2390AAAD005503F0 /* Assets.xcassets in Resources */,
+				5F4AAED72393FCA6005A4973 /* Search.storyboard in Resources */,
 				5F4AAED223932606005A4973 /* Main.storyboard in Resources */,
+				5F4AAED92393FCCB005A4973 /* Favorites.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
