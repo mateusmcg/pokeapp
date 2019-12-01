@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -15,6 +15,11 @@
 		5F4AAED223932606005A4973 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5F4AAED123932606005A4973 /* Main.storyboard */; };
 		5F4AAED72393FCA6005A4973 /* Search.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5F4AAED62393FCA6005A4973 /* Search.storyboard */; };
 		5F4AAED92393FCCB005A4973 /* Favorites.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5F4AAED82393FCCB005A4973 /* Favorites.storyboard */; };
+		5F677F842394056E0018180E /* PokeApiManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F677F832394056E0018180E /* PokeApiManager.swift */; };
+		5F677F8D23946A260018180E /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F677F8C23946A260018180E /* SearchViewController.swift */; };
+		76953A79443F92ABD1AC1D74 /* Pods_pokeapp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 46C78C3E1C3D7A791D3CD590 /* Pods_pokeapp.framework */; };
+		82012BC46A07CF58305285E4 /* Pods_pokeapp_pokeappUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4F1690427FD948347DBEFF54 /* Pods_pokeapp_pokeappUITests.framework */; };
+		CD5225C7ABFBE82D9E3D21C8 /* Pods_pokeappTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 439BD84B331A1229053F0DDA /* Pods_pokeappTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +40,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		30D3CFE5EA7C9999598C585B /* Pods-pokeapp-pokeappUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-pokeapp-pokeappUITests.release.xcconfig"; path = "Target Support Files/Pods-pokeapp-pokeappUITests/Pods-pokeapp-pokeappUITests.release.xcconfig"; sourceTree = "<group>"; };
+		38D9B09B0DCDD7426A72D7C8 /* Pods-pokeappTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-pokeappTests.release.xcconfig"; path = "Target Support Files/Pods-pokeappTests/Pods-pokeappTests.release.xcconfig"; sourceTree = "<group>"; };
+		439BD84B331A1229053F0DDA /* Pods_pokeappTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_pokeappTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		46C78C3E1C3D7A791D3CD590 /* Pods_pokeapp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_pokeapp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4F1690427FD948347DBEFF54 /* Pods_pokeapp_pokeappUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_pokeapp_pokeappUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5F31BDA12390AAA9005503F0 /* pokeapp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = pokeapp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5F31BDA42390AAA9005503F0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5F31BDAA2390AAAD005503F0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -49,6 +59,12 @@
 		5F4AAED123932606005A4973 /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		5F4AAED62393FCA6005A4973 /* Search.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Search.storyboard; sourceTree = "<group>"; };
 		5F4AAED82393FCCB005A4973 /* Favorites.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Favorites.storyboard; sourceTree = "<group>"; };
+		5F677F832394056E0018180E /* PokeApiManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokeApiManager.swift; sourceTree = "<group>"; };
+		5F677F8C23946A260018180E /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
+		A2521C727C09B200E163D303 /* Pods-pokeappTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-pokeappTests.debug.xcconfig"; path = "Target Support Files/Pods-pokeappTests/Pods-pokeappTests.debug.xcconfig"; sourceTree = "<group>"; };
+		AC609D4B0CFA13EB865C3EAE /* Pods-pokeapp-pokeappUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-pokeapp-pokeappUITests.debug.xcconfig"; path = "Target Support Files/Pods-pokeapp-pokeappUITests/Pods-pokeapp-pokeappUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		D0C7B38107AE3D18C74ED7BA /* Pods-pokeapp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-pokeapp.debug.xcconfig"; path = "Target Support Files/Pods-pokeapp/Pods-pokeapp.debug.xcconfig"; sourceTree = "<group>"; };
+		E90B6D5D06108067BFD2078D /* Pods-pokeapp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-pokeapp.release.xcconfig"; path = "Target Support Files/Pods-pokeapp/Pods-pokeapp.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +72,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				76953A79443F92ABD1AC1D74 /* Pods_pokeapp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +80,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CD5225C7ABFBE82D9E3D21C8 /* Pods_pokeappTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -70,6 +88,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				82012BC46A07CF58305285E4 /* Pods_pokeapp_pokeappUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,6 +102,8 @@
 				5F31BDBA2390AAAE005503F0 /* pokeappTests */,
 				5F31BDC52390AAAE005503F0 /* pokeappUITests */,
 				5F31BDA22390AAA9005503F0 /* Products */,
+				8F1534E9F7B566471A6831E9 /* Pods */,
+				DA98B789F183EBC2FC5AE9E5 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -99,6 +120,8 @@
 		5F31BDA32390AAA9005503F0 /* pokeapp */ = {
 			isa = PBXGroup;
 			children = (
+				5F677F852394691B0018180E /* ViewControllers */,
+				5F677F80239404950018180E /* RestManager */,
 				5F4AAED52393FC5B005A4973 /* Storyboards */,
 				5F31BDA42390AAA9005503F0 /* AppDelegate.swift */,
 				5F31BDAA2390AAAD005503F0 /* Assets.xcassets */,
@@ -136,6 +159,45 @@
 			path = Storyboards;
 			sourceTree = "<group>";
 		};
+		5F677F80239404950018180E /* RestManager */ = {
+			isa = PBXGroup;
+			children = (
+				5F677F832394056E0018180E /* PokeApiManager.swift */,
+			);
+			path = RestManager;
+			sourceTree = "<group>";
+		};
+		5F677F852394691B0018180E /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				5F677F8C23946A260018180E /* SearchViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		8F1534E9F7B566471A6831E9 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D0C7B38107AE3D18C74ED7BA /* Pods-pokeapp.debug.xcconfig */,
+				E90B6D5D06108067BFD2078D /* Pods-pokeapp.release.xcconfig */,
+				AC609D4B0CFA13EB865C3EAE /* Pods-pokeapp-pokeappUITests.debug.xcconfig */,
+				30D3CFE5EA7C9999598C585B /* Pods-pokeapp-pokeappUITests.release.xcconfig */,
+				A2521C727C09B200E163D303 /* Pods-pokeappTests.debug.xcconfig */,
+				38D9B09B0DCDD7426A72D7C8 /* Pods-pokeappTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		DA98B789F183EBC2FC5AE9E5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				46C78C3E1C3D7A791D3CD590 /* Pods_pokeapp.framework */,
+				4F1690427FD948347DBEFF54 /* Pods_pokeapp_pokeappUITests.framework */,
+				439BD84B331A1229053F0DDA /* Pods_pokeappTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -143,9 +205,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 5F31BDCB2390AAAE005503F0 /* Build configuration list for PBXNativeTarget "pokeapp" */;
 			buildPhases = (
+				2D8E2397D9721E1FFEB6CC7A /* [CP] Check Pods Manifest.lock */,
 				5F31BD9D2390AAA9005503F0 /* Sources */,
 				5F31BD9E2390AAA9005503F0 /* Frameworks */,
 				5F31BD9F2390AAA9005503F0 /* Resources */,
+				BC23D9CB6779A2212E228C3E /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -160,6 +224,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 5F31BDCE2390AAAE005503F0 /* Build configuration list for PBXNativeTarget "pokeappTests" */;
 			buildPhases = (
+				A2771F32BC280465A82DAD41 /* [CP] Check Pods Manifest.lock */,
 				5F31BDB32390AAAE005503F0 /* Sources */,
 				5F31BDB42390AAAE005503F0 /* Frameworks */,
 				5F31BDB52390AAAE005503F0 /* Resources */,
@@ -178,9 +243,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 5F31BDD12390AAAE005503F0 /* Build configuration list for PBXNativeTarget "pokeappUITests" */;
 			buildPhases = (
+				C98CE4262E4996B2EFC426D3 /* [CP] Check Pods Manifest.lock */,
 				5F31BDBE2390AAAE005503F0 /* Sources */,
 				5F31BDBF2390AAAE005503F0 /* Frameworks */,
 				5F31BDC02390AAAE005503F0 /* Resources */,
+				06F87653E9E0306256DBA381 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -264,12 +331,117 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		06F87653E9E0306256DBA381 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-pokeapp-pokeappUITests/Pods-pokeapp-pokeappUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-pokeapp-pokeappUITests/Pods-pokeapp-pokeappUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-pokeapp-pokeappUITests/Pods-pokeapp-pokeappUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		2D8E2397D9721E1FFEB6CC7A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-pokeapp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A2771F32BC280465A82DAD41 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-pokeappTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BC23D9CB6779A2212E228C3E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-pokeapp/Pods-pokeapp-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-pokeapp/Pods-pokeapp-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-pokeapp/Pods-pokeapp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C98CE4262E4996B2EFC426D3 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-pokeapp-pokeappUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		5F31BD9D2390AAA9005503F0 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5F677F8D23946A260018180E /* SearchViewController.swift in Sources */,
 				5F31BDA52390AAA9005503F0 /* AppDelegate.swift in Sources */,
+				5F677F842394056E0018180E /* PokeApiManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -432,6 +604,7 @@
 		};
 		5F31BDCC2390AAAE005503F0 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D0C7B38107AE3D18C74ED7BA /* Pods-pokeapp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -453,6 +626,7 @@
 		};
 		5F31BDCD2390AAAE005503F0 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E90B6D5D06108067BFD2078D /* Pods-pokeapp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -474,6 +648,7 @@
 		};
 		5F31BDCF2390AAAE005503F0 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A2521C727C09B200E163D303 /* Pods-pokeappTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -496,6 +671,7 @@
 		};
 		5F31BDD02390AAAE005503F0 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 38D9B09B0DCDD7426A72D7C8 /* Pods-pokeappTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -518,6 +694,7 @@
 		};
 		5F31BDD22390AAAE005503F0 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = AC609D4B0CFA13EB865C3EAE /* Pods-pokeapp-pokeappUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -538,6 +715,7 @@
 		};
 		5F31BDD32390AAAE005503F0 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 30D3CFE5EA7C9999598C585B /* Pods-pokeapp-pokeappUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
