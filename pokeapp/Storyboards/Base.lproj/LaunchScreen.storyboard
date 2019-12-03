@@ -14,14 +14,39 @@
                     <view key="view" userInteractionEnabled="NO" contentMode="scaleToFill" id="Ze5-6b-2t3">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="T4D-Db-KMh">
+                                <rect key="frame" x="0.0" y="448" width="414" height="448"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                            </view>
+                            <imageView autoresizesSubviews="NO" clearsContextBeforeDrawing="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="pokeball-launchscreen" adjustsImageSizeForAccessibilityContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Oid-YH-YH8">
+                                <rect key="frame" x="175" y="416" width="64" height="64"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="64" id="LBX-BA-C2V"/>
+                                    <constraint firstAttribute="height" constant="64" id="olK-aE-3kS"/>
+                                </constraints>
+                                <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="pointSize" pointSize="17" scale="default"/>
+                            </imageView>
+                        </subviews>
                         <color key="backgroundColor" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <color key="tintColor" cocoaTouchSystemColor="lightTextColor"/>
+                        <color key="tintColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <constraints>
+                            <constraint firstItem="Oid-YH-YH8" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="0qe-5P-FIp"/>
+                            <constraint firstItem="Oid-YH-YH8" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="E3R-xA-Ayp"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="T4D-Db-KMh" secondAttribute="bottom" constant="-34" id="Frm-Qm-Xm0"/>
+                            <constraint firstItem="T4D-Db-KMh" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="UTO-bh-vt1"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="T4D-Db-KMh" secondAttribute="trailing" id="VRV-2M-sPy"/>
+                            <constraint firstItem="T4D-Db-KMh" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="We5-aD-4XH"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="53" y="375"/>
+            <point key="canvasLocation" x="52.173913043478265" y="375"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="pokeball-launchscreen" width="64" height="64"/>
+    </resources>
 </document>
