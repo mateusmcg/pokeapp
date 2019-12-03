@@ -17,7 +17,7 @@ class PokeApiManager: NSObject {
     
     static let pokemonPath = "pokemon/";
     
-    func getPokemonByName(pokemonName: String, onSuccess: @escaping(Pokemon) -> Void, onError: @escaping(Error) -> Void) {
+    func getPokemonByName(pokemonName: String, onSuccess: @escaping(JSON) -> Void, onError: @escaping(Error) -> Void) {
         let url: String = baseUrl + PokeApiManager.pokemonPath + pokemonName
         
         let request: NSMutableURLRequest = NSMutableURLRequest(url: NSURL(string: url)! as URL)
@@ -29,7 +29,7 @@ class PokeApiManager: NSObject {
             if(error != nil) {
                 onError(error!)
             } else {
-                let result = Pokemon(json: JSON(data!))
+                let result = JSON(data!)
                 onSuccess(result)
             }
         })

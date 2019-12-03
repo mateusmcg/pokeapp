@@ -8,21 +8,24 @@
 
 import UIKit
 
-class SearchScreen: UIViewController, UISearchBarDelegate {
+class SearchScreen: UIViewController {
     
     @IBOutlet weak var textView: UITextView!
     @IBOutlet weak var searchBar: UISearchBar!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         searchBar.delegate = self
     }
-    
-    func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
-        PokeApiManager.pokeApiManager.getPokemonByName(pokemonName: searchText.lowercased(), onSuccess: { pokemon in
+}
+
+extension SearchScreen: UISearchBarDelegate {
+    func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
+        searchBar.resignFirstResponder()
+        
+        PokeApiManager.pokeApiManager.getPokemonByName(pokemonName: searchBar.text?.lowercased() ?? "", onSuccess: { json in
             DispatchQueue.main.async {
-                self.textView?.text = pokemon.id + " - " + pokemon.name
+                self.textView?.text = String(describing: json)
             }
         }, onError: { error in
             let alert = UIAlertController(title: "Error", message: error.localizedDescription, preferredStyle: .alert)

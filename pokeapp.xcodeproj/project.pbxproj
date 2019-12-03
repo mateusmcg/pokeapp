@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		5F27AF672394AFD000C554EC /* Pokemon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F27AF662394AFD000C554EC /* Pokemon.swift */; };
 		5F27AF6A2395EA0600C554EC /* UIViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F27AF692395EA0600C554EC /* UIViewExtension.swift */; };
-		5F27AF6C2395EB7500C554EC /* LaunchScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F27AF6B2395EB7500C554EC /* LaunchScreen.swift */; };
 		5F31BDA52390AAA9005503F0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F31BDA42390AAA9005503F0 /* AppDelegate.swift */; };
 		5F31BDAB2390AAAD005503F0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5F31BDAA2390AAAD005503F0 /* Assets.xcassets */; };
 		5F31BDB12390AAAD005503F0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5F31BDAF2390AAAD005503F0 /* LaunchScreen.storyboard */; };
@@ -50,7 +49,6 @@
 		4F1690427FD948347DBEFF54 /* Pods_pokeapp_pokeappUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_pokeapp_pokeappUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5F27AF662394AFD000C554EC /* Pokemon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pokemon.swift; sourceTree = "<group>"; };
 		5F27AF692395EA0600C554EC /* UIViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewExtension.swift; sourceTree = "<group>"; };
-		5F27AF6B2395EB7500C554EC /* LaunchScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchScreen.swift; sourceTree = "<group>"; };
 		5F31BDA12390AAA9005503F0 /* pokeapp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = pokeapp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5F31BDA42390AAA9005503F0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5F31BDAA2390AAAD005503F0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -195,7 +193,6 @@
 			isa = PBXGroup;
 			children = (
 				5F677F8C23946A260018180E /* SearchScreen.swift */,
-				5F27AF6B2395EB7500C554EC /* LaunchScreen.swift */,
 			);
 			path = Screens;
 			sourceTree = "<group>";
@@ -466,7 +463,6 @@
 			files = (
 				5F27AF6A2395EA0600C554EC /* UIViewExtension.swift in Sources */,
 				5F677F8D23946A260018180E /* SearchScreen.swift in Sources */,
-				5F27AF6C2395EB7500C554EC /* LaunchScreen.swift in Sources */,
 				5F27AF672394AFD000C554EC /* Pokemon.swift in Sources */,
 				5F31BDA52390AAA9005503F0 /* AppDelegate.swift in Sources */,
 				5F677F842394056E0018180E /* PokeApiManager.swift in Sources */,
