@@ -23,9 +23,14 @@ extension SearchScreen: UISearchBarDelegate {
     func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
         searchBar.resignFirstResponder()
         
-        PokeApiManager.pokeApiManager.getPokemonByName(pokemonName: searchBar.text?.lowercased() ?? "", onSuccess: { json in
+        PokeApiManager.pokeApiManager.getPokemonByName(pokemonName: searchBar.text?.lowercased() ?? "", onSuccess: { (pokemon: Pokemon?) in
             DispatchQueue.main.async {
-                self.textView?.text = String(describing: json)
+                if(pokemon == nil) {
+                    self.textView?.text = "No Pokemon Found!"
+                    return
+                }
+                
+                self.textView?.text = String(describing: pokemon)
             }
         }, onError: { error in
             let alert = UIAlertController(title: "Error", message: error.localizedDescription, preferredStyle: .alert)

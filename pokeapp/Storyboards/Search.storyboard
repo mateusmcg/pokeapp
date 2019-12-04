@@ -23,7 +23,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
-                            <searchBar contentMode="redraw" fixedFrame="YES" placeholder="Search your pokemon" showsBookmarkButton="YES" translatesAutoresizingMaskIntoConstraints="NO" id="P87-pz-EcF">
+                            <searchBar contentMode="redraw" fixedFrame="YES" placeholder="Search your pokemon" translatesAutoresizingMaskIntoConstraints="NO" id="P87-pz-EcF">
                                 <rect key="frame" x="0.0" y="88" width="414" height="56"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                                 <textInputTraits key="textInputTraits" returnKeyType="search"/>

@@ -17,7 +17,7 @@ class PokeApiManager: NSObject {
     
     static let pokemonPath = "pokemon/";
     
-    func getPokemonByName(pokemonName: String, onSuccess: @escaping(JSON) -> Void, onError: @escaping(Error) -> Void) {
+    func getPokemonByName(pokemonName: String, onSuccess: @escaping(Pokemon?) -> Void, onError: @escaping(Error) -> Void) {
         let url: String = baseUrl + PokeApiManager.pokemonPath + pokemonName
         
         let request: NSMutableURLRequest = NSMutableURLRequest(url: NSURL(string: url)! as URL)
@@ -25,12 +25,16 @@ class PokeApiManager: NSObject {
         
         let session = URLSession.shared
         
-        let task = session.dataTask(with: request as URLRequest, completionHandler: {data, response, error -> Void in
+        let task = session.dataTask(with: request as URLRequest, completionHandler: { (data, response, error) in
             if(error != nil) {
                 onError(error!)
             } else {
-                let result = JSON(data!)
-                onSuccess(result)
+                do {
+                    let result = try JSONDecoder().decode(Pokemon.self, from: data!)
+                    onSuccess(result)
+                } catch {
+                    onSuccess(nil)
+                }
             }
         })
         

@@ -8,12 +8,22 @@
 
 import SwiftyJSON
 
-struct Pokemon {
-    let id: String
+struct Pokemon: Decodable {
+    let id: Int
     let name: String
-    
-    init(json: JSON) {
-        id = json["id"].stringValue
-        name = json["name"].stringValue
-    }
+    let base_experience: Int
+    let height: Int
+    let is_default: Bool
+    let order: Int
+    let weight: Int
+    let abilities: [PokemonAbility]
+    let forms: [NamedAPIResource]
+    let game_indices: [VersionGameIndex]
+    let held_items: [PokemonHeldItem]
+    let location_area_encounters: String
+    let moves: [PokemonMove]
+    let sprites: PokemonSprites
+    let species: NamedAPIResource
+    let stats: [PokemonStat]
+    let types: [PokemonType]
 }
